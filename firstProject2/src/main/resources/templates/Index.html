@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Holaa Comoyesta! </h1>
+    <a th:href="@{/about}"> About HTML pe leke chal </a>
+
+    <!-- <h1> I am <span th:text="${name}"> Smit </span> and a <span th:text="${h_name}"> Student</span></h1> -->
+
+
+    <!--    <h1 th:if="${isStudent}"> I am Smit </h1> 
+    <h1 th:unless="${isStudent}"> I am Steve </h1> 
+
+    <div th:switch="${h_name}">
+        <h1 th:case="Smit"> I am Smit </h1>
+        <h1 th:case="Ironman"> I am Tony </h1>
+        <h1 th:case="*"> No Value </h1>
+    </div> -->
+    
+    
+    <hr>
+
+    <h1>My Name Is <span th:text="${name}">Steve Roger</span>
+    and heroic name is <span th:text="${h_name}">Captain America</span></h1>
+
+    <hr>
+    <h2>==== If Condition ====</h2>
+    <h1 th:unless="ishero"> He is Hero </h1>
+
+    <hr>
+    <h2>==== If Else Condition ====</h2>
+    <h1 th:if="${ishero}"> He is Hero</h1>
+    <h1 th:unless="${ishero}"> He is not Hero</h1>
+
+    <hr>
+    <h2>==== Switch Case ====</h2>
+    <div th:switch="${h_name}">
+        <p th:case="captain">Captain America</p>
+        <p th:case="ironman">IronMan</p>
+        <p th:case="*">Hero Not Selected</p>
+        
+        <hr>
+        <h2> =============================================================== </h2>
+        <h1> Avengers </h1>
+        <h2 th:each="a:${aven}" th:text="${a}"></h2>
+    </div>
+
+</body>
+</html>
