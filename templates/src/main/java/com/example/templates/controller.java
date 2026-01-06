@@ -1,10 +1,10 @@
-package com.example.first_project.controller;
+package com.example.Template_Inheritance.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class controller {
+public class PageController {
     
     @GetMapping("/")
     public String index(){
