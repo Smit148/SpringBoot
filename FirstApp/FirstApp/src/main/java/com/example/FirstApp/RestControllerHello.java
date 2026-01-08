@@ -1,6 +1,3 @@
-
-
-
 package com.example.FirstApp;
 
 import org.springframework.web.bind.annotation.RestController;
