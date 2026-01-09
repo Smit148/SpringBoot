@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{base}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PixelCart</title>
+
+
+  <!-- <script>
+    const isLoggedIn = false; // change to true to test
+
+    if (isLoggedIn) {
+      document.getElementById("loginBtn").classList.add("d-none");
+      document.getElementById("userMenu").classList.remove("d-none");
+    }
+  </script> -->
+
+  <style>
+
+    body {
+      background-image: url("images/bg.avif");
+      background-size: cover;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+
+  <!-- SLIDER -->
+   <div layout:fragment="content">    
+     <div class="position-relative">
+       <img src="images/slider.png" class="w-100" style="height:500px; object-fit:cover;">
+      </div>
+      
+      
+      <!-- PRODUCTS -->
+      <section class="container my-5">
+        <h2 class="text-center mb-4" style="color: greenyellow;text-shadow: white;">Our Products</h2>
+        
+        <div class="row g-4">
+          
+          <!-- PRODUCT CARD -->
+          <div class="col-md-4">
+            <div class="card h-100 position-relative">
+              <img src="images/pc_games.webp" class="card-img-top" style="height:220px; object-fit:cover;">
+              
+              <div class="card-body text-center">
+                <h5 class="card-title">PC Games</h5>
+                <a href="pc_games.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- PRODUCT CARD -->
+          <div class="col-md-4">
+            <div class="card h-100 position-relative">
+              <img src="images/console_game.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+              
+              <div class="card-body text-center">
+                <h5 class="card-title">Console Games</h5>
+                <a href="console_game.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- PRODUCT CARD -->
+          <div class="col-md-4">
+            <div class="card h-100 position-relative">
+              <img src="images/gaming_gear.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+              
+              <div class="card-body text-center">
+                <h5 class="card-title">Gaming Gear</h5>
+                <a th:href="@{/gear}" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
