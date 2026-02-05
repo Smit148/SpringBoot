@@ -1,4 +1,4 @@
-package com.example.PixelCart_Frontend;
+package com.example.PixelCart_Frontend.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,5 +21,5 @@ public class PageController {
     @GetMapping("/gear")
     public String gear()
     {return "gear";}
-    
+
 }
